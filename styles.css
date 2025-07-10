@@ -2,10 +2,18 @@ body {
     font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* .hero,
+.random-info,
+.quote,
+.signup-section,
+.footer {
+    padding: 20px 200px;
+} */
 
 .header {
     display: flex;
     align-items: center;
+    padding-bottom: 40px;
 }
 
 .logo {
@@ -21,6 +29,7 @@ body {
     
 }
 
+
 ul {
     list-style-type: none;
 }
@@ -32,25 +41,31 @@ a {
 
 .hero {
     background-color: #1f2937;
+    padding: 0 200px;
+    padding-bottom: 60px;
 }
 
 .hero-content {
     display: flex;
+    align-items: center;
 }
 
 .hero-header {
     font-weight: 900;
     font-size: 48px;
+    max-width: 450px;
     color: #f9faf8;
 }
 
 .hero-text {
     display: flex;
     flex-direction: column;
+    margin-right: auto;
+    gap: 8px;
 }
 
 .hero-subtext {
-    max-width: 600px;
+    max-width: 450px;
     font-size: 18px;
     color: #e5e7eb;
 }
@@ -60,14 +75,16 @@ a {
     font-size: 18px;
     color: #e5e7eb;
     background-color: #3882f6;
+    border-radius: 5px;
+    border: none;
 }
 
 .random-info {
    display: flex;
    flex-direction: column;
    align-items: center;
-   gap: 10px;
-   padding: 10px;
+   gap: 40px;
+   padding: 60px;
 
 }
 
@@ -79,11 +96,16 @@ a {
 
 .img-section {
     display: flex;
+    gap: 80px;
+    padding-bottom: 60px;
 }
 
 .img-txt {
-    max-width: 250px;
+    max-width: 150px;
+    text-align: center;
 }
+
+
 
 .img-txt .image-placeholder {
     border: solid 2px #3882f6;
@@ -96,6 +118,7 @@ a {
     flex-direction: column;
     align-items: center;
     background-color: #e5e7eb;
+    padding: 60px 200px;
 }
 
 .quote p{
@@ -103,29 +126,53 @@ a {
     color:#1f2937;
     font-weight: lighter;
     font-style: italic;
+    max-width: 760px;
 }
 
 .attribution {
-    align-self: flex-end;
     font-weight: bold;
+    margin-left: auto;
+    padding-right: 200px;
 }
+
 
 .signup-bubble {
     background-color: #3882f6;
     display: flex;
+    padding: 40px 160px;
+    justify-content: space-between;
+    color: #f9faf8;
+    margin: 60px 200px;
+    border-radius: 5px;
 }
 
 .signup-header {
     font-weight: bold;
+    color: #f9faf8;
 }
 
-
+.signup-button {
+    background-color: #3882f6;
+    border: #f9faf8 2px solid;
+    color: #f9faf8;
+    border-radius: 5px;
+    min-width: 100px;
+}
 
 .footer {
     display: flex;
     justify-content: center;
     background-color: #1f2937;
+    color: #f9faf8;
+    padding: 20px;
 }
+
+
+
+
+
+
+
 
 
 
@@ -139,23 +186,16 @@ a {
 }
 
 .hero-image {
-    height: 200px;
-    width: 400px;
+    height: 230px;
+    width: 500px;
 }
 
 .random-image {
-    height: 50px;
-    width: 50px;
+    height: 150px;
+    width: 150px;
 }
 
-.hero,
-.random-info,
-.quote,
-.signup-section,
-.footer {
-    border: solid 1px;
-    padding: 20px 0;
-}
+
 
 /* body {
     display: flex;
